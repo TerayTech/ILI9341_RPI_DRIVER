@@ -1,0 +1,16 @@
+CC=gcc
+
+TARGET=main
+
+SRCS=main.c lcd.c lcd_init.c 
+
+OBJS = $(SRCS:.c=.o)
+
+$(TARGET):$(OBJS)
+	$(CC) -o $@ $^
+
+.c.o:
+	$(CC) -c $<
+	
+clean:
+	rm -rf *.o main

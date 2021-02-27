@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "lcd_init.h": "c",
+        "lcd.h": "c"
+    }
+}
